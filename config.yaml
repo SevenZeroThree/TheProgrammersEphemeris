@@ -1,0 +1,17 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "The Programmer's Ephemeris"
+sectionPagesMenu: "main"
+pygmentsCodeFences: true
+
+#permalinks:
+#  posts: /:section/:title/
+
+menu:
+  footer:
+  - identifier: about
+    name: About
+    url: /about/
+  - identifier: contact
+    name: Contact
+    url: /contact/
