@@ -1,8 +1,9 @@
-baseURL: "http://example.org/"
+#baseURL: "https://sevenzerothree.github.io/"
 languageCode: "en-us"
 title: "The Programmer's Ephemeris"
 sectionPagesMenu: "main"
 pygmentsCodeFences: true
+relativeURLs: true
 
 #permalinks:
 #  posts: /:section/:title/
