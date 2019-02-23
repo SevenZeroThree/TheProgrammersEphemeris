@@ -1,24 +1,2 @@
 language: c
 os: linux
-
-before_script:
-  - sudo apt-get --yes install snapd
-  - sudo snap install hugo
-
-script:
-  - /snap/bin/hugo
-
-branches:
-  only:
-    - master
-
-# deploy:
-#   provider: pages
-#   skip_cleanup: true
-#   local_dir: public
-#   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-#   keep-history: true
-#   on:
-#     branch: master
-#   target_branch: gh-pages
-#   committer-from-gh: true
