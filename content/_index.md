@@ -1,5 +1,6 @@
 ---
 title: 'Welcome'
+description: 'This is a test description'
 ---
 ## This is my super awesome homepage
 
