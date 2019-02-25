@@ -5,8 +5,10 @@ sectionPagesMenu: "main"
 pygmentsCodeFences: true
 relativeURLs: true
 
-#permalinks:
-#  posts: /:section/:title/
+params:
+  isSupportEnabled: false
+  isSearchEnabled: false
+  isFeaturedSectionEnabled: false
 
 menu:
   footer:
