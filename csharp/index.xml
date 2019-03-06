@@ -17,8 +17,9 @@
       <pubDate>Mon, 04 Feb 2019 20:34:49 -0500</pubDate>
       
       <guid>/csharp/string-format/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in suscipit felis. Mauris ac nunc eget leo aliquet viverra. Maecenas sed diam dui. Donec suscipit mauris nisi, quis volutpat magna sagittis at. Integer sed sapien posuere, finibus risus sed, semper velit. Nulla id vulputate lacus, vel posuere ligula. Integer ultrices aliquam erat vel blandit. Maecenas eget nulla quis velit congue varius.
-Vestibulum in vulputate nunc. Cras commodo elit et sem pellentesque, sed mattis orci viverra.</description>
+      <description>String formatting is an essential tool in any programming language. The string object in the C# language exposes a method for string formatting that is easy to use.
+Check out the docs at Microsoft for more details.
+Examples The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.</description>
     </item>
     
   </channel>

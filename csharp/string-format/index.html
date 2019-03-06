@@ -6,8 +6,9 @@
     <meta name="description" content="" />
 
     <meta property="og:title" content="String.Format" />
-<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in suscipit felis. Mauris ac nunc eget leo aliquet viverra. Maecenas sed diam dui. Donec suscipit mauris nisi, quis volutpat magna sagittis at. Integer sed sapien posuere, finibus risus sed, semper velit. Nulla id vulputate lacus, vel posuere ligula. Integer ultrices aliquam erat vel blandit. Maecenas eget nulla quis velit congue varius.
-Vestibulum in vulputate nunc. Cras commodo elit et sem pellentesque, sed mattis orci viverra." />
+<meta property="og:description" content="String formatting is an essential tool in any programming language. The string object in the C# language exposes a method for string formatting that is easy to use.
+Check out the docs at Microsoft for more details.
+Examples The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/csharp/string-format/" />
 <meta property="article:published_time" content="2019-02-04T20:34:49-05:00"/>
@@ -15,8 +16,9 @@ Vestibulum in vulputate nunc. Cras commodo elit et sem pellentesque, sed mattis 
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="String.Format"/>
-<meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in suscipit felis. Mauris ac nunc eget leo aliquet viverra. Maecenas sed diam dui. Donec suscipit mauris nisi, quis volutpat magna sagittis at. Integer sed sapien posuere, finibus risus sed, semper velit. Nulla id vulputate lacus, vel posuere ligula. Integer ultrices aliquam erat vel blandit. Maecenas eget nulla quis velit congue varius.
-Vestibulum in vulputate nunc. Cras commodo elit et sem pellentesque, sed mattis orci viverra."/>
+<meta name="twitter:description" content="String formatting is an essential tool in any programming language. The string object in the C# language exposes a method for string formatting that is easy to use.
+Check out the docs at Microsoft for more details.
+Examples The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string."/>
 
 
     <title>String.Format | The Programmer&#39;s Ephemeris</title>
@@ -50,24 +52,41 @@ Vestibulum in vulputate nunc. Cras commodo elit et sem pellentesque, sed mattis 
 <main>
     <article>
         <header>
-            <h1>String.Format</h1>
+            <h1> C#  - String.Format</h1>
         </header>
-        <p>This is from the single layout page.</p>
         
-        <script type="application/javascript" src="//gist.github.com/SevenZeroThree/0733fd702948079fa176f46b126858d0.js"></script>
+        
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in suscipit felis. Mauris ac nunc eget leo aliquet viverra. Maecenas sed diam dui. Donec suscipit mauris nisi, quis volutpat magna sagittis at. Integer sed sapien posuere, finibus risus sed, semper velit. Nulla id vulputate lacus, vel posuere ligula. Integer ultrices aliquam erat vel blandit. Maecenas eget nulla quis velit congue varius.</p>
+<p>String formatting is an essential tool in any programming language. The string object in the C# language exposes a method for string formatting that is easy to use.</p>
 
-<p>Vestibulum in vulputate nunc. Cras commodo elit et sem pellentesque, sed mattis orci viverra. Nullam lobortis dapibus quam, eu convallis augue viverra sed. Nam viverra aliquam turpis, vitae dignissim ex sagittis in. Aenean at nibh lacus. Duis ac semper elit, eu facilisis augue. Suspendisse porta elit in magna convallis, nec finibus nulla rutrum. Donec sagittis ultrices libero vel vestibulum.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Test()
+<p>Check out the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.string.format">docs</a> at Microsoft for more details.</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.</p>
+
+<p>The parameter indicators in the format string are 0 based indexes. The first parameter is {0}, the second is {1}, etc.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#2b91af">string</span> Format(<span style="color:#2b91af">string</span> format, <span style="color:#00f">params</span> <span style="color:#2b91af">object</span>[] args);</code></pre></div>
+<h3 id="standard-formatting">Standard Formatting</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#00f">public</span> <span style="color:#00f">void</span> Test()
 {
-    <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;This is a {0}&#34;</span>, <span style="color:#e6db74">&#34;Test&#34;</span>);
+    <span style="color:#2b91af">string</span>.Format(<span style="color:#a31515">&#34;This is a {0}&#34;</span>, <span style="color:#a31515">&#34;Test&#34;</span>);
 }</code></pre></div>
-<p>Maecenas et justo a dolor auctor mattis. Aenean varius tempor porttitor. Vivamus tincidunt eros in lectus mattis scelerisque. Praesent non aliquet eros. Aenean elit sem, congue vel magna et, efficitur mattis turpis. Ut eget nibh egestas, mattis ex a, laoreet felis. Donec ultricies massa nec velit venenatis, et mattis tellus fringilla. Cras nec molestie urna. In nec commodo erat. Phasellus elementum nibh sed eleifend scelerisque. Sed lectus sem, posuere ac est sed, commodo elementum dui. Ut consequat arcu et dui dignissim ornare.</p>
+<p>Output</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">This is a Test</code></pre></div>
+<h3 id="date-formatting">Date Formatting</h3>
 
-<p>Vivamus volutpat ante vitae volutpat accumsan. Etiam volutpat ornare egestas. Nunc ultricies dapibus erat non malesuada. Nam eu fermentum nisi, in tristique lectus. Vivamus ut egestas mauris. Suspendisse non ante elit. Mauris non odio ornare, maximus lectus non, ultrices sapien. Donec non euismod neque. Donec eu commodo nisi. Quisque consectetur porttitor leo non dapibus. In eu mauris sem.</p>
+<h3 id="exceptions">Exceptions</h3>
 
-<p>Praesent eget risus id eros commodo molestie. Etiam lobortis, quam sit amet fermentum facilisis, felis massa eleifend leo, id laoreet risus enim nec nibh. Phasellus cursus ornare sapien, in gravida sapien iaculis sit amet. Maecenas tincidunt ipsum in justo ultricies accumsan. Integer eu suscipit sem. Integer nulla risus, sollicitudin in imperdiet vulputate, commodo quis sem. Fusce fermentum nisl non laoreet eleifend. Mauris luctus a massa at vulputate. Praesent vel mi vel augue imperdiet sollicitudin. Nam viverra lectus commodo, tempor mauris id, laoreet nulla. Vivamus neque quam, suscipit convallis urna ac, imperdiet rutrum ante.</p>
+<h3 id="alternatives">Alternatives</h3>
+
+<p>string.Concat</p>
+
+<p>string interpolation</p>
+
+<p>StringBuilder</p>
+
+<script type="application/javascript" src="//gist.github.com/SevenZeroThree/0733fd702948079fa176f46b126858d0.js"></script>
 
     </article>
 </main>
