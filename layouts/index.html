@@ -51,7 +51,7 @@
   {{ range .Pages }}
     <div class="blog-post">
         <h2 class="blog-post-title"><a href="{{.Permalink}}" style="color: inherit;">{{.Title}}</a></h2>
-        <p class="blog-post-meta"><a href='{{with .Site.GetPage "section" .Section}}{{.Permalink}}{{end}}'>{{if eq .Section "csharp"}} C# {{ else }}{{ .Section }}{{ end }}</a> - {{ .Date }} by <a href="/contributors/#Christopher">Christopher</a></p>
+        <p class="blog-post-meta"><a href='{{with .Site.GetPage "section" .Section}}{{.Permalink}}{{end}}'>{{ partial "sectioname.html" . }}</a> - {{ .Date }} by <a href="/contributors/#Christopher">Christopher</a></p>
         {{ .Summary }}
     </div>
     {{ end }}
