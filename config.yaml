@@ -2,8 +2,11 @@
 languageCode: "en-us"
 title: "The Programmer's Ephemeris"
 sectionPagesMenu: "main"
-pygmentsCodeFences: true
 relativeURLs: true
+
+pygmentsCodeFences: true
+pygmentsStyle: vs
+
 
 params:
   isSupportEnabled: false
