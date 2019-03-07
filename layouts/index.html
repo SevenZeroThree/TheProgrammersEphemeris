@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+  {{.Content}}
+
   {{ if .Site.Params.isFeaturedSectionEnabled }}
   <div class="row mb-2">
     <div class="col-md-12">
@@ -38,8 +40,6 @@
   </div>
 
   {{ end }}
-
-  {{.Content}}
 
   <div class="row mb-2">
     <div class="col-md-12">

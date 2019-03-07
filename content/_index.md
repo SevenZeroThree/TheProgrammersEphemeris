@@ -2,7 +2,8 @@
 title: 'Welcome'
 description: 'This is a test description'
 ---
-## This is my super awesome homepage
+# Welcome to The Programmer's Ephemeris
 
-Some definitely awesome content for the homepage
+This site is meant to make it easier to find information on how to use various methods and concepts in several popular programming languages.
 
+Have a look around. We hope that it helps.
