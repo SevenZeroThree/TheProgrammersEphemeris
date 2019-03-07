@@ -121,6 +121,8 @@ public void Test()
 
 ## Exceptions
 
+A `FormatException` will be thrown if the `format` argument is invalid, or if the index of an item is greater than or equal to the length of the `args` array.
+
 ## Alternatives
 
 string.Concat
