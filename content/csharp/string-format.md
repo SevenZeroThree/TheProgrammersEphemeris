@@ -43,8 +43,8 @@ using System;
 
 public void Test()
 {
-    const int errorCode = 500;
-    const string errorMessage = "System unavailable";
+    int errorCode = 500;
+    string errorMessage = "System unavailable";
 
     String.Format("An error occurred:  Code=[{0}] Message=[{1}]", errorCode, errorMessage);
 }
@@ -56,7 +56,68 @@ public void Test()
 
 ```
 
-## Date Formatting
+## Controlling the Format with a Format Identifier
+
+Every index in the format string can be followed with a format identifier if desired. This will change the output of the object to the specified format. `{0:d}` applies the `d` formatting to the first object in the list, `{0:C2}` applies the `C` formatting with 2 decimal places to the first object in the list, and so on.
+
+Several types support these format identifiers, including dates ([supported identifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)) and numbers ([supported identifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)).
+
+### Date Formatting
+
+``` c#
+using System;
+
+public void Test()
+{
+    String.Format("The current date and time is {0:d} at {0:t}", DateTime.Now);
+}
+
+// Output
+/*
+ *  The current date and time is 03/07/2019 at 01:52
+ */
+
+```
+
+### Numeric Formatting
+
+``` c#
+using System;
+
+public void Test()
+{
+    decimal price = 10.364324m;
+
+    String.Format("The price is: {0:C2}", price);
+}
+
+// Output
+/*
+ *  The price is: $10.36
+ */
+
+```
+
+### Padding
+
+It is possible to control the padding for each of the positions in the format string. This padding can be used to left or right align the objects in the format string. A positive number indicates right-alignment, while a negative number will left align the field.
+
+``` c#
+using System;
+
+public void Test()
+{
+    string.Format("{0:d} {1,12:N0}", DateTime.Now, 123456);
+    string.Format("{0:d} {1,-12:N0} more data.", DateTime.Now, 123456);
+}
+
+// Output
+/*
+ *  3/6/19      123,456
+ *  3/6/19 123,456      more data.
+ */
+
+```
 
 ## Exceptions
 
