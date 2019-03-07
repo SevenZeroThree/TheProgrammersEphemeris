@@ -17,9 +17,8 @@
       <pubDate>Mon, 04 Feb 2019 20:34:49 -0500</pubDate>
       
       <guid>/csharp/string-format/</guid>
-      <description>String formatting is an essential tool in any programming language. The string object in the C# language exposes a method for string formatting that is easy to use.
-Check out the docs at Microsoft for more details.
-Examples The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.</description>
+      <description>The String object in the C# language exposes a method for string formatting that is very easy to use. The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.
+The parameter indicators in the format string are 0 based indexes. The first parameter is {0}, the second is {1}, etc.</description>
     </item>
     
   </channel>
