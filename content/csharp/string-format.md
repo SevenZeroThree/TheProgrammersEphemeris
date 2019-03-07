@@ -1,42 +1,66 @@
 ---
 title: "String.Format"
 date: 2019-02-04T20:34:49-05:00
+taxonomies:
+    category: Method
 ---
 
-String formatting is an essential tool in any programming language. The string object in the C# language exposes a method for string formatting that is easy to use.
+The `String` object in the C# language exposes a method for string formatting that is very easy to use. The most common use case of the `string.Format` method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.
 
-Check out the [docs](https://docs.microsoft.com/en-us/dotnet/api/system.string.format) at Microsoft for more details.
+The parameter indicators in the format string are 0 based indexes. The first parameter is {0}, the second is {1}, etc. Objects passed into the `string.Format` method will be converted to a string and placed into the format string at the indicated position.
 
-## Examples
+See below for some examples on how to use the `string.Format` method.
 
-The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.
-
-The parameter indicators in the format string are 0 based indexes. The first parameter is {0}, the second is {1}, etc.
+## Method Signature
 
 ``` c#
 public static string Format(string format, params object[] args);
 ```
 
-### Standard Formatting
+## Standard Formatting
+
+### Single Position
 
 ``` c#
+using System;
+
 public void Test()
 {
-    string.Format("This is a {0}", "Test");
+    String.Format("This is a {0}", "Test");
 }
+
+// Output
+/*
+ *  This is a Test
+ */
+
 ```
 
-Output
+### Multiple Positions
 
-``` plain
-This is a Test
+``` c#
+using System;
+
+public void Test()
+{
+    const int errorCode = 500;
+    const string errorMessage = "System unavailable";
+
+    String.Format("An error occurred:  Code=[{0}] Message=[{1}]", errorCode, errorMessage);
+}
+
+// Output
+/*
+ *  An error occurred:  Code=[500] Message=[System unavailable]
+ */
+
 ```
 
-### Date Formatting
+## Date Formatting
 
-### Exceptions
+## Exceptions
 
-### Alternatives
+## Alternatives
 
 string.Concat
 
@@ -44,4 +68,6 @@ string interpolation
 
 StringBuilder
 
-{{< gist SevenZeroThree 0733fd702948079fa176f46b126858d0 >}}
+## Resources
+
+Check out the [docs](https://docs.microsoft.com/en-us/dotnet/api/system.string.format) at Microsoft for more details.
