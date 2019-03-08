@@ -125,11 +125,9 @@ A `FormatException` will be thrown if the `format` argument is invalid, or if th
 
 ## Alternatives
 
-string.Concat
-
-string interpolation
-
-StringBuilder
+- string.Concat
+- string interpolation
+- StringBuilder
 
 ## Resources
 
