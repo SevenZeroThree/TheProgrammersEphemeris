@@ -1,6 +1,6 @@
 ---
 title: "String.Format"
-date: 2019-02-04T20:34:49-05:00
+date: 2019-02-04
 taxonomies:
     category: Method
 ---
