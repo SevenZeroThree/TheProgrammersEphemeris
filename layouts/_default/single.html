@@ -3,8 +3,9 @@
     <article>
         <header>
             <h1>{{ partial "sectioname.html" . }} {{ .Title}}</h1>
+            <small class="text-muted">{{ dateFormat "January 2, 2006" .PublishDate }} | {{ .ReadingTime }} minutes to read</small>
         </header>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+        <hr />
         {{.Content}}
     </article>
 </main>

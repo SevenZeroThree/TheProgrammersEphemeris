@@ -1,58 +1,61 @@
 {{ define "main" }}
+  <main>
+    {{.Content}}
 
-  {{.Content}}
-
-  {{ if .Site.Params.isFeaturedSectionEnabled }}
-  <div class="row mb-2">
-    <div class="col-md-12">
-        <h3 class="pb-3 mb-4 font-italic border-bottom">
-          Featured
-        </h3>
-    </div>
-  </div>
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-primary">C#</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">String.Format</a>
+    {{ if .Site.Params.isFeaturedSectionEnabled }}
+    <div class="row mb-2">
+      <div class="col-md-12">
+          <h3 class="pb-3 mb-4 font-italic border-bottom">
+            Featured
           </h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#">Continue reading</a>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary">C#</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">String.Format</a>
+            </h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Continue reading</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-success">Swift</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Table View Controller</a>
+            </h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Continue reading</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-success">Swift</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">Table View Controller</a>
+
+    {{ end }}
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+          <h3 class="pb-3 mb-4 font-italic border-bottom">
+            Latest
           </h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#">Continue reading</a>
-        </div>
       </div>
     </div>
-  </div>
-
-  {{ end }}
-
-  <div class="row mb-2">
-    <div class="col-md-12">
-        <h3 class="pb-3 mb-4 font-italic border-bottom">
-          Latest
-        </h3>
-    </div>
-  </div>
-  {{ range .Pages }}
-    <div class="blog-post">
-        <h2 class="blog-post-title"><a href="{{.Permalink}}" style="color: inherit;">{{.Title}}</a></h2>
-        <p class="blog-post-meta"><a href='{{with .Site.GetPage "section" .Section}}{{.Permalink}}{{end}}'>{{ partial "sectioname.html" . }}</a> - {{ dateFormat "January 2, 2006" .Date }} by <a href="/contributors/#Christopher">Christopher</a></p>
-        {{ .Summary }}
-    </div>
-  {{ end }}
+    {{ range .Pages }}
+      <article class="blog-post">
+          <header>
+              <h2 class="blog-post-title"><a href="{{.Permalink}}" style="color: inherit;">{{.Title}}</a></h2>
+              <p class="blog-post-meta"><a href='{{with .Site.GetPage "section" .Section}}{{.Permalink}}{{end}}'>{{ partial "sectioname.html" . }}</a> - {{ dateFormat "January 2, 2006" .Date }} by <a href="/contributors/#Christopher">Christopher</a></p>
+          </header>
+          {{ .Summary }}
+      </article>
+    {{ end }}
+  </main>
 {{ end }}
