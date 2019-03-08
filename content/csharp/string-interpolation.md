@@ -44,6 +44,12 @@ public void Test()
 
 ```
 
+## Alternatives
+
+- string.Concat
+- [string.Format](/csharp/string-format)
+- StringBuilder
+
 ## Resources
 
 Check out the [docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated) at Microsoft for more details.

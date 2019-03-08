@@ -126,7 +126,7 @@ A `FormatException` will be thrown if the `format` argument is invalid, or if th
 ## Alternatives
 
 - string.Concat
-- string interpolation
+- [string interpolation](/csharp/string-interpolation)
 - StringBuilder
 
 ## Resources
