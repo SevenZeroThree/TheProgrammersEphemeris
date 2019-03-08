@@ -43,15 +43,15 @@
 
     <div class="row mb-2">
       <div class="col-md-12">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">
+          <h2 class="pb-3 mb-4 font-italic border-bottom">
             Latest
-          </h3>
+          </h2>
       </div>
     </div>
     {{ range .Pages }}
       <article class="blog-post">
           <header>
-              <h2 class="blog-post-title"><a href="{{.Permalink}}" style="color: inherit;">{{.Title}}</a></h2>
+              <h3><a href="{{.Permalink}}" style="color: inherit;">{{.Title}}</a></h3>
               <p class="blog-post-meta"><a href='{{with .Site.GetPage "section" .Section}}{{.Permalink}}{{end}}'>{{ partial "sectioname.html" . }}</a> - {{ dateFormat "January 2, 2006" .Date }} by <a href="/contributors/#Christopher">Christopher</a></p>
           </header>
           {{ .Summary }}
