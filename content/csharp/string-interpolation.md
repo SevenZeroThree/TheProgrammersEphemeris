@@ -47,7 +47,7 @@ public void Test()
 ## Alternatives
 
 - string.Concat
-- [string.Format](/csharp/string-format)
+- [string.Format]({{< ref "/csharp/string-format.md" >}})
 - StringBuilder
 
 ## Resources
