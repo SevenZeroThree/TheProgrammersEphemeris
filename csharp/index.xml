@@ -6,15 +6,26 @@
     <description>Recent content in C# on The Programmer&#39;s Ephemeris</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2019 20:34:49 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/csharp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>String Interpolation</title>
+      <link>/csharp/string-interpolation/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-interpolation/</guid>
+      <description>String interpolation provides an alternative to the string.Format method. While the end result is the same, string interpolation provides a more readable and convenient syntax for formatting strings. This feature is available in C# versions 6 and later.
+To begin the string interpolation, the string must be prefixed with the $ character:
+public void Test() { var amount = 1.23; var message = $&amp;#34;The cost is {amount:C2}&amp;#34;; } // Output /* * The cost is $1.</description>
+    </item>
+    
+    <item>
       <title>String.Format</title>
       <link>/csharp/string-format/</link>
-      <pubDate>Mon, 04 Feb 2019 20:34:49 -0500</pubDate>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/csharp/string-format/</guid>
       <description>The String object in the C# language exposes a method for string formatting that is very easy to use. The most common use case of the string.Format method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.

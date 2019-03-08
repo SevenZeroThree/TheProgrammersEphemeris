@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="String Interpolation" />
+<meta property="og:description" content="String interpolation provides an alternative to the string.Format method. While the end result is the same, string interpolation provides a more readable and convenient syntax for formatting strings. This feature is available in C# versions 6 and later.
+To begin the string interpolation, the string must be prefixed with the $ character:
+public void Test() { var amount = 1.23; var message = $&#34;The cost is {amount:C2}&#34;; } // Output /* * The cost is $1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/csharp/string-interpolation/" />
+<meta property="article:published_time" content="2019-03-07T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-03-07T00:00:00&#43;00:00"/>
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="String Interpolation"/>
+<meta name="twitter:description" content="String interpolation provides an alternative to the string.Format method. While the end result is the same, string interpolation provides a more readable and convenient syntax for formatting strings. This feature is available in C# versions 6 and later.
+To begin the string interpolation, the string must be prefixed with the $ character:
+public void Test() { var amount = 1.23; var message = $&#34;The cost is {amount:C2}&#34;; } // Output /* * The cost is $1."/>
+
+
+    <title>
+         C#  String Interpolation | The Programmer&#39;s Ephemeris
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../css/blog.css" />
+  </head>
+  <body>
+    <div class="container">
+        <header class="blog-header py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+              
+            <div class="col-12 text-center">
+              <a class="blog-header-logo text-dark" href="../../">The Programmer&#39;s Ephemeris</a>
+            </div>
+            
+          </div>
+        </header>
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                
+                
+                  <a class="p-2 text-muted" href="../../csharp/" title="">
+                    C# 
+                  </a>
+                
+            </nav>
+          </div>
+      
+      
+<main>
+    <article>
+        <header>
+            <h1> C#  String Interpolation</h1>
+            <small class="text-muted">March 7, 2019 | 1 minutes to read</small>
+        </header>
+        <hr />
+        
+
+<p>String interpolation provides an alternative to the <code>string.Format</code> method. While the end result is the same, string interpolation provides a more readable and convenient syntax for formatting strings. This feature is available in C# versions 6 and later.</p>
+
+<p>To begin the string interpolation, the string must be prefixed with the <code>$</code> character:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#00f">public</span> <span style="color:#00f">void</span> Test()
+{
+    <span style="color:#2b91af">var</span> amount = 1.23;
+    <span style="color:#2b91af">var</span> message = <span style="color:#a31515">$&#34;The cost is {amount:C2}&#34;</span>;
+}
+
+<span style="color:#008000">// Output
+</span><span style="color:#008000"></span><span style="color:#008000">/*
+</span><span style="color:#008000"> *  The cost is $1.23
+</span><span style="color:#008000"> */</span></code></pre></div>
+<p>Example comparing <code>string.Format</code> to string interpolation:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#00f">using</span> System;
+
+<span style="color:#00f">public</span> <span style="color:#00f">void</span> Test()
+{
+    <span style="color:#2b91af">int</span> errorCode = 500;
+    <span style="color:#2b91af">string</span> errorMessage = <span style="color:#a31515">&#34;System unavailable&#34;</span>;
+
+    String.Format(<span style="color:#a31515">&#34;An error occurred:  Code=[{0}] Message=[{1}]&#34;</span>, errorCode, errorMessage);
+    <span style="color:#2b91af">var</span> message = <span style="color:#a31515">$&#34;An error occurred:  Code=[{errorCode}] Message=[{errorMessage}]&#34;</span>;
+}
+
+<span style="color:#008000">// Output
+</span><span style="color:#008000"></span><span style="color:#008000">/*
+</span><span style="color:#008000"> *  An error occurred:  Code=[500] Message=[System unavailable]
+</span><span style="color:#008000"> */</span></code></pre></div>
+<h2 id="resources">Resources</h2>
+
+<p>Check out the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated">docs</a> at Microsoft for more details.</p>
+
+
+        
+        
+        <footer>
+            <header>
+                <h3>Alternatives</h3>
+            </header>
+            
+            <ul>
+                
+                <li><a href="../../csharp/string-format/">String.Format</a></li>
+                
+            </ul>
+        </footer>
+        
+    </article>
+</main>
+
+      
+    </div>
+    
+      <footer class="border-top blog-footer">
+    <div class="row">
+        <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 2018-2019 Christopher Tobin</small>
+        </div>
+        
+        
+        
+    </div>
+</footer>
+    
+  </body>
+</html>
