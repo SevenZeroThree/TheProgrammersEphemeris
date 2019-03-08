@@ -3,6 +3,7 @@ title: "String Interpolation"
 date: 2019-03-07
 taxonomies:
     category: Concept
+keywords: [string,formatting]
 ---
 
 String interpolation provides an alternative to the `string.Format` method. While the end result is the same, string interpolation provides a more readable and convenient syntax for formatting strings. This feature is available in C# versions 6 and later.
@@ -43,12 +44,6 @@ public void Test()
  */
 
 ```
-
-## Alternatives
-
-- string.Concat
-- [string.Format]({{< ref "/csharp/string-format.md" >}})
-- StringBuilder
 
 ## Resources
 

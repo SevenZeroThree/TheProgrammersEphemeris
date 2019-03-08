@@ -3,6 +3,7 @@ title: "String.Format"
 date: 2019-02-04
 taxonomies:
     category: Method
+keywords: [string,formatting]
 ---
 
 The `String` object in the C# language exposes a method for string formatting that is very easy to use. The most common use case of the `string.Format` method is for passing a string representing the desired format as the first argument, and an array of objects to insert into the string.
@@ -122,12 +123,6 @@ public void Test()
 ## Exceptions
 
 A `FormatException` will be thrown if the `format` argument is invalid, or if the index of an item is greater than or equal to the length of the `args` array.
-
-## Alternatives
-
-- string.Concat
-- [string interpolation]({{< ref "/csharp/string-interpolation.md" >}})
-- StringBuilder
 
 ## Resources
 

@@ -7,6 +7,21 @@
         </header>
         <hr />
         {{.Content}}
+
+        {{ $related := .Site.RegularPages.Related . | first 5 }}
+        {{ with $related }}
+        <footer>
+            <header>
+                <h3>Alternatives</h3>
+            </header>
+            
+            <ul>
+                {{ range . }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </footer>
+        {{ end }}
     </article>
 </main>
 {{ end }}
