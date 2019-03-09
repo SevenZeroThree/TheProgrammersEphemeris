@@ -1,1 +1,7 @@
-{{if eq .Section "csharp"}} C# {{ else }}{{ .Section }}{{ end }}
+{{if eq .Section "csharp"}} 
+    C# 
+{{ else if eq .Section "visualbasic" }}
+    Visual Basic
+{{ else }}
+    {{ .Section }}
+{{ end }}
