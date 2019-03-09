@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Basic on The Programmer&#39;s Ephemeris</title>
+    <link>/visualbasic/</link>
+    <description>Recent content in Visual Basic on The Programmer&#39;s Ephemeris</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/visualbasic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Strings.LTrim</title>
+      <link>/visualbasic/strings-ltrim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/visualbasic/strings-ltrim/</guid>
+      <description>Leading whitespace can be removed from strings in Visual Basic using the LTrim method.
+Dim TestString As String = &amp;#34; Extra spaces&amp;#34; Dim TrimString As String TrimString = LTrim(TestString) &amp;#39; Output &amp;#39; Extra spaces</description>
+    </item>
+    
+    <item>
+      <title>Strings.RTrim</title>
+      <link>/visualbasic/strings-rtrim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/visualbasic/strings-rtrim/</guid>
+      <description>Trailing whitespace can be removed from strings in Visual Basic using the RTrim method.
+Dim TestString As String = &amp;#34;Extra spaces &amp;#34; Dim TrimString As String TrimString = RTrim(TestString) &amp;#39; Output &amp;#39; Extra spaces</description>
+    </item>
+    
+    <item>
+      <title>Strings.Trim</title>
+      <link>/visualbasic/strings-trim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/visualbasic/strings-trim/</guid>
+      <description>Leading and trailing whitespace can be removed from strings in Visual Basic using the Trim method.
+Dim TestString As String = &amp;#34; Extra spaces &amp;#34; Dim TrimString As String TrimString = Trim(TestString) &amp;#39; Output &amp;#39; Extra spaces</description>
+    </item>
+    
+  </channel>
+</rss>

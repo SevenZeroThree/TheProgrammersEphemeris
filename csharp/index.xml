@@ -6,10 +6,41 @@
     <description>Recent content in C# on The Programmer&#39;s Ephemeris</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/csharp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>String.Trim</title>
+      <link>/csharp/string-trim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-trim/</guid>
+      <description>There are 2 overloads to the Trim() method:
+   Method Description     Trim() Removes all leading and trailing whitespace from a given string.   Trim(Char[]) Removes all leading and trailing instances of the specified characters from a given string    Trim The Trim() method removes all leading and trailing whitespace from a given string.
+public string Trim(); Examples using System; public class Program { public static void Main() { var testString = &amp;#34; some string &amp;#34;; testString.</description>
+    </item>
+    
+    <item>
+      <title>String.TrimEnd</title>
+      <link>/csharp/string-trimend/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-trimend/</guid>
+      <description> The TrimEnd(char[]) method removes all trailing instances of the specified characters from a given string.
+public string TrimEnd(params char[] trimChars); Examples using System; public class Program { public static void Main() { char[] charsToTrim = { &amp;#39;*&amp;#39;, &amp;#39; &amp;#39; }; string message = &amp;#34;*** some string ***&amp;#34;; Console.WriteLine(message.TrimEnd(charsToTrim)); } } // Output /* * *** some string */</description>
+    </item>
+    
+    <item>
+      <title>String.TrimStart</title>
+      <link>/csharp/string-trimstart/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-trimstart/</guid>
+      <description> The TrimStart(char[]) method removes all leading instances of the specified characters from a given string.
+public string TrimStart(params char[] trimChars); Examples using System; public class Program { public static void Main() { char[] charsToTrim = { &amp;#39;*&amp;#39;, &amp;#39; &amp;#39; }; string message = &amp;#34;*** some string ***&amp;#34;; Console.WriteLine(message.TrimStart(charsToTrim)); } } // Output /* * some string *** */</description>
+    </item>
     
     <item>
       <title>String Interpolation</title>

@@ -6,10 +6,71 @@
     <description>Recent content in Welcome on The Programmer&#39;s Ephemeris</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>String.Trim</title>
+      <link>/csharp/string-trim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-trim/</guid>
+      <description>There are 2 overloads to the Trim() method:
+   Method Description     Trim() Removes all leading and trailing whitespace from a given string.   Trim(Char[]) Removes all leading and trailing instances of the specified characters from a given string    Trim The Trim() method removes all leading and trailing whitespace from a given string.
+public string Trim(); Examples using System; public class Program { public static void Main() { var testString = &amp;#34; some string &amp;#34;; testString.</description>
+    </item>
+    
+    <item>
+      <title>String.TrimEnd</title>
+      <link>/csharp/string-trimend/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-trimend/</guid>
+      <description> The TrimEnd(char[]) method removes all trailing instances of the specified characters from a given string.
+public string TrimEnd(params char[] trimChars); Examples using System; public class Program { public static void Main() { char[] charsToTrim = { &amp;#39;*&amp;#39;, &amp;#39; &amp;#39; }; string message = &amp;#34;*** some string ***&amp;#34;; Console.WriteLine(message.TrimEnd(charsToTrim)); } } // Output /* * *** some string */</description>
+    </item>
+    
+    <item>
+      <title>String.TrimStart</title>
+      <link>/csharp/string-trimstart/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-trimstart/</guid>
+      <description> The TrimStart(char[]) method removes all leading instances of the specified characters from a given string.
+public string TrimStart(params char[] trimChars); Examples using System; public class Program { public static void Main() { char[] charsToTrim = { &amp;#39;*&amp;#39;, &amp;#39; &amp;#39; }; string message = &amp;#34;*** some string ***&amp;#34;; Console.WriteLine(message.TrimStart(charsToTrim)); } } // Output /* * some string *** */</description>
+    </item>
+    
+    <item>
+      <title>Strings.LTrim</title>
+      <link>/visualbasic/strings-ltrim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/visualbasic/strings-ltrim/</guid>
+      <description>Leading whitespace can be removed from strings in Visual Basic using the LTrim method.
+Dim TestString As String = &amp;#34; Extra spaces&amp;#34; Dim TrimString As String TrimString = LTrim(TestString) &amp;#39; Output &amp;#39; Extra spaces</description>
+    </item>
+    
+    <item>
+      <title>Strings.RTrim</title>
+      <link>/visualbasic/strings-rtrim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/visualbasic/strings-rtrim/</guid>
+      <description>Trailing whitespace can be removed from strings in Visual Basic using the RTrim method.
+Dim TestString As String = &amp;#34;Extra spaces &amp;#34; Dim TrimString As String TrimString = RTrim(TestString) &amp;#39; Output &amp;#39; Extra spaces</description>
+    </item>
+    
+    <item>
+      <title>Strings.Trim</title>
+      <link>/visualbasic/strings-trim/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/visualbasic/strings-trim/</guid>
+      <description>Leading and trailing whitespace can be removed from strings in Visual Basic using the Trim method.
+Dim TestString As String = &amp;#34; Extra spaces &amp;#34; Dim TrimString As String TrimString = Trim(TestString) &amp;#39; Output &amp;#39; Extra spaces</description>
+    </item>
     
     <item>
       <title>String Interpolation</title>
