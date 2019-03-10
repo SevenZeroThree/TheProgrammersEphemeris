@@ -6,10 +6,20 @@
     <description>Recent content in C# on The Programmer&#39;s Ephemeris</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/csharp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>String.Substring</title>
+      <link>/csharp/string-substring/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/csharp/string-substring/</guid>
+      <description>There are 2 overloads to the Substring() method:
+   Method Description     Substring(Int32) Returns a substring from the specified string. It begins at the specified index and continues to the end of the string.   Substring(Int32, Int32) Returns a substring from the specified string. It begins at the specified index and continues to the specified length.    Substring(Int32) The Substring(Int32) method returns a substring from the specified string.</description>
+    </item>
     
     <item>
       <title>String.Trim</title>
